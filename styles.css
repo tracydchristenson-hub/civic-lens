@@ -190,7 +190,7 @@ body.dark-mode {
 
 /* skip link styles from: https://webaim.org/techniques/css/invisiblecontent/ */
 
-#skip {
+#skiplink {
     position: absolute;
     left: -10000px;
     top: auto;
@@ -199,7 +199,7 @@ body.dark-mode {
     overflow: hidden;
 }
 
-#skip:focus {
+#skiplink:focus {
     position: static;
     width: auto;
     height: auto;
