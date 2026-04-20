@@ -200,7 +200,7 @@
         text-decoration: none;
         background-color: var(--news-flash);
         color: var(--watchdog-white);
-        padding: 20px;
+        padding: 20px 10px;
     }
     /* ///ADD/// Global Layout Styles */
     
@@ -215,6 +215,13 @@
     header {
         background-color: var(--blue-bulletin);
         color: var(--watchdog-white);
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+    
+    main {
+        width: 80%;
+        margin: 0 auto;
     }
     
     .story {
@@ -271,7 +278,12 @@
         font-size: 20px;
     }
     
-    .tagline {
+    header .tagline {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    
+    #welcome .tagline {
         font-size: 18px;
         font-weight: bold;
         text-align: center;
