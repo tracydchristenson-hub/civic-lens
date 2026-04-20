@@ -192,15 +192,17 @@
         list-style: none;
     }
     
-    nav ul li {
+    nav ul li,
+    #social ul li {
         display: inline-block;
     }
     
-    nav ul li a {
+    nav ul li a,
+    #social ul li a {
         text-decoration: none;
         background-color: var(--news-flash);
         color: var(--watchdog-white);
-        padding: 20px 10px;
+        padding: 10px;
     }
     /* ///ADD/// Global Layout Styles */
     
@@ -224,11 +226,16 @@
         margin: 0 auto;
     }
     
+    section {
+        30px;
+    }
+    
     .story {
         background-color: var(--news-flash);
         color: var(--watchdog-white);
         padding: 20px;
         border: 1px solid var(--truth-text);
+        box-shadow: 2px 2px 3px var(--truth-text);
     }
     
     .story hr {
@@ -238,6 +245,7 @@
     #featured section {
         padding: 20px;
         border: 1px solid var(--truth-text);
+        box-shadow: 2px 2px 3px var(--truth-text);
     }
     
     #featured section hr {
@@ -247,11 +255,19 @@
     form {
         background-color: var(--news-flash);
         color: var(--watchdog-white);
+        border: 1px solid var(--blue-bulletin);
+        padding: 20px;
+    }
+    
+    fieldset {
+        border: 1px solid var(--blue-bulletin);
+        padding: 10px;
     }
     
     input[type="submit"] {
         background-color: var(--blue-bulletin);
         color: var(--watchdog-white);
+        box-shadow: 2px 2px 3px var(--truth-text);
     }
     
     footer {
@@ -286,6 +302,10 @@
     #welcome .tagline {
         font-size: 18px;
         font-weight: bold;
+        text-align: center;
+    }
+    
+    footer p {
         text-align: center;
     }
     /* ///ADD/// medium styles 620px */
