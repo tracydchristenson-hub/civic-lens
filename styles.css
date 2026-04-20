@@ -211,7 +211,27 @@ body.dark-mode {
 
 /* ///ADD/// Global Layout Styles */
 
+body {
+    background-color: var(--watchdog-white);
+    color: var(--truth-text);
+}
+
 header {
+    background-color: var(--blue-bulletin);
+    color: var(--watchdog-white);
+}
+
+.story {
+    background-color: var(--news-flash);
+    color: var(--watchdog-white);
+}
+
+form {
+    background-color: var(--news-flash);
+    color: var(--watchdog-white);
+}
+
+footer {
     background-color: var(--blue-bulletin);
     color: var(--watchdog-white);
 }
