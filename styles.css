@@ -214,6 +214,7 @@ body.dark-mode {
 body {
     background-color: var(--watchdog-white);
     color: var(--truth-text);
+    font-family: Arial, Verdana, sans-serif;
 }
 
 header {
@@ -243,6 +244,12 @@ footer {
 
 
 /* ///ADD/// Global Text Styles */
+
+h1,
+h2,
+h3 {
+    font-family: Garamond, 'Times New Roman', serif;
+}
 
 
 /* ///ADD/// medium styles 620px */
