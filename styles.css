@@ -192,8 +192,15 @@
         list-style: none;
     }
     
+    nav ul li {
+        display: inline-block;
+    }
+    
     nav ul li a {
         text-decoration: none;
+        background-color: var(--news-flash);
+        color: var(--watchdog-white);
+        padding: 20px;
     }
     /* ///ADD/// Global Layout Styles */
     
@@ -217,9 +224,17 @@
         border: 1px solid var(--truth-text);
     }
     
+    .story hr {
+        width: 90%;
+    }
+    
     #featured section {
         padding: 20px;
         border: 1px solid var(--truth-text);
+    }
+    
+    #featured section hr {
+        width: 90%;
     }
     
     form {
@@ -253,7 +268,13 @@
     }
     
     h3 {
+        font-size: 20px;
+    }
+    
+    .tagline {
         font-size: 18px;
+        font-weight: bold;
+        text-align: center;
     }
     /* ///ADD/// medium styles 620px */
     /* ///ADD/// large styles 920px */
