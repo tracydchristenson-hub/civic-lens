@@ -231,6 +231,11 @@ form {
     color: var(--watchdog-white);
 }
 
+input[type="submit"] {
+    background-color: var(--blue-bulletin);
+    color: var(--watchdog-white);
+}
+
 footer {
     background-color: var(--blue-bulletin);
     color: var(--watchdog-white);
