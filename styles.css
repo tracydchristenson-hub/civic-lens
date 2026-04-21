@@ -392,7 +392,7 @@
         
         @media screen and (min-width: 620px) {
             nav ul {
-                max-height: 200px;
+                max-height: 100px;
             }
             nav ul li,
             #social ul li {
