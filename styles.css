@@ -203,6 +203,7 @@
             background-color: var(--news-flash);
             color: var(--watchdog-white);
             padding: 10px;
+            margin: 10px;
         }
         
         nav label {
@@ -236,13 +237,14 @@
         }
         
         section {
-            padding: 30px;
+            padding: 20px;
         }
         
         .story {
             background-color: var(--news-flash);
             color: var(--watchdog-white);
             padding: 20px;
+            margin: 20px;
             border: 1px solid var(--truth-text);
             box-shadow: 2px 2px 3px var(--truth-text);
         }
@@ -259,6 +261,7 @@
         
         #featured section {
             padding: 20px;
+            margin: 20px;
             border: 1px solid var(--truth-text);
             box-shadow: 2px 2px 3px var(--truth-text);
         }
@@ -280,9 +283,17 @@
         fieldset {
             border: 1px solid var(--blue-bulletin);
             padding: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             grid-column: 1 / -1;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
+        }
+        
+        input[type="text"],
+        input[type="tel"] {
+            width: 100%;
+            height: 30px;
         }
         
         input[type="submit"] {
@@ -290,6 +301,7 @@
             color: var(--watchdog-white);
             box-shadow: 2px 2px 3px var(--truth-text);
             grid-column: 1 / -1;
+            height: 30px;
         }
         
         footer {
