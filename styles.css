@@ -421,11 +421,6 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
             }
-            #social ul {
-                margin: 20px;
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-            }
         }
         /* ///ADD/// x-large styles 1024px */
         
