@@ -203,7 +203,7 @@
             background-color: var(--news-flash);
             color: var(--watchdog-white);
             padding: 10px;
-            margin: 10px;
+            margin: 20px;
         }
         
         nav label {
@@ -322,8 +322,6 @@
         
         #social ul {
             margin: 20px;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
         }
         /* ///ADD/// Global Text Styles */
         
