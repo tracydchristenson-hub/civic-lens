@@ -301,6 +301,10 @@
             width: 80%;
             margin: 0 auto;
         }
+        
+        #social ul {
+            margin-top: 20px;
+        }
         /* ///ADD/// Global Text Styles */
         
         h1,
