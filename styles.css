@@ -388,6 +388,9 @@
             nav label {
                 visibility: hidden;
             }
+            nav ul li a {
+                visibility: visible;
+            }
             #featured {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
