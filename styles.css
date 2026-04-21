@@ -338,6 +338,15 @@
      animation: pulse 1s linear infinite;
  }
  
+ @keyframes pulse {
+     from {
+         scale: 75% 1;
+     }
+     to {
+         scale: 100% 1;
+     }
+ }
+ 
  footer {
      background-color: var(--blue-bulletin);
      color: var(--watchdog-white);
@@ -457,7 +466,7 @@
  
  @media (prefers-reduced-motion: reduce) {
      input[type="submit"] {
-         animation: dissolve 4s linear infinite both;
+         animation: pulse 4s linear infinite both;
      }
  }
  /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
