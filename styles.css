@@ -334,6 +334,7 @@
      grid-column: 1 / -1;
      height: 40px;
      text-transform: uppercase;
+     animation: pulse 1s linear infinite;
  }
  
  footer {
@@ -449,6 +450,12 @@
      body.light-mode {
          background-color: var(--watchdog-white);
          color: var(--truth-text);
+     }
+ }
+ 
+ @media (prefers-reduced-motion: reduce) {
+     input[type="submit"] {
+         animation: dissolve 4s linear infinite both;
      }
  }
  /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
