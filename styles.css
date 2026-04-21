@@ -364,6 +364,9 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
             }
+            #featured h2 {
+                grid-column: 1 / -1;
+            }
         }
         /* ///ADD/// large styles 920px */
         
@@ -379,6 +382,9 @@
             #breaking {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
+            }
+            #breaking h2 {
+                grid-column: 1 / -1;
             }
         }
         /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
