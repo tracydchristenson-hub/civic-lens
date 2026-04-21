@@ -279,6 +279,7 @@
             margin: 10px;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            box-shadow: 2px 2px 3px var(--truth-text);
         }
         
         form div {
@@ -320,7 +321,9 @@
         }
         
         #social ul {
-            margin-top: 20px;
+            margin: 20px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
         }
         /* ///ADD/// Global Text Styles */
         
@@ -374,6 +377,11 @@
             #featured {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
+            }
+            #social ul {
+                margin: 20px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             }
         }
         /* ///ADD/// x-large styles 1024px */
