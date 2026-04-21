@@ -195,6 +195,7 @@
         }
         
         nav ul li a {
+            display: block;
             text-decoration: none;
             background-color: var(--news-flash);
             color: var(--watchdog-white);
@@ -204,18 +205,20 @@
         }
         
         #social ul li a {
+            display: block;
             text-decoration: none;
             background-color: var(--news-flash);
             color: var(--watchdog-white);
             padding: 10px;
-            margin: 40px;
+            margin: 20px;
         }
         
         nav label {
+            display: block;
             background-color: var(--news-flash);
             color: var(--watchdog-white);
             padding: 10px;
-            margin: 50px;
+            margin: 30px;
         }
         
         input:checked~ul {
