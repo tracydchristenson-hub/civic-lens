@@ -190,11 +190,8 @@
         
         nav ul {
             list-style: none;
-        }
-        
-        nav ul li,
-        #social ul li {
-            display: inline-block;
+            background-color: var(--blue-bulletin);
+            max-height: 0;
         }
         
         nav ul li a,
@@ -207,7 +204,14 @@
         }
         
         nav label {
-            visibility: hidden;
+            background-color: var(--news-flash);
+            color: var(--watchdog-white);
+            padding: 10px;
+            margin: 20px;
+        }
+        
+        input:checked~ul {
+            max-height: 500px;
         }
         /* ///ADD/// Global Layout Styles */
         
@@ -323,6 +327,10 @@
         #social ul {
             margin: 20px;
         }
+        
+        #social ul li {
+            display: inline-block;
+        }
         /* ///ADD/// Global Text Styles */
         
         h1,
@@ -361,6 +369,13 @@
         /* ///ADD/// medium styles 620px */
         
         @media screen and (min-width: 620px) {
+            nav ul li,
+            #social ul li {
+                display: inline-block;
+            }
+            nav label {
+                visibility: hidden;
+            }
             #featured {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
