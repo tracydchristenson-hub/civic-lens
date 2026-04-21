@@ -225,6 +225,11 @@
             padding-bottom: 30px;
         }
         
+        header div {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
         main {
             width: 80%;
             margin: 0 auto;
@@ -244,7 +249,12 @@
         
         .story hr {
             width: 90%;
-            margin: auto;
+            margin: 10px auto;
+        }
+        
+        video {
+            width: 90%;
+            margin: 10px auto;
         }
         
         #featured section {
@@ -255,6 +265,7 @@
         
         #featured section hr {
             width: 90%;
+            margin: 10px auto;
         }
         
         form {
