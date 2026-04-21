@@ -198,7 +198,9 @@
             text-decoration: none;
             background-color: var(--news-flash);
             color: var(--watchdog-white);
-            max-height: 0;
+            padding: 10px;
+            margin: 20px;
+            visibility: hidden;
         }
         
         #social ul li a {
@@ -221,9 +223,7 @@
         }
         
         input:checked~ul li a {
-            max-height: 40px;
-            padding: 10px;
-            margin: 20px;
+            visibility: visible;
         }
         /* ///ADD/// Global Layout Styles */
         
