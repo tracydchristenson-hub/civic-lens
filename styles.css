@@ -221,6 +221,7 @@
             display: block;
             background-color: var(--news-flash);
             color: var(--watchdog-white);
+            width: 50%;
             padding: 10px;
             margin: 30px;
         }
@@ -390,7 +391,7 @@
         
         @media screen and (min-width: 620px) {
             nav ul {
-                max-height: 500px;
+                max-height: 200px;
             }
             nav ul li,
             #social ul li {
