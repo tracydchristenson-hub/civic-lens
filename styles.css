@@ -208,14 +208,14 @@
             background-color: var(--news-flash);
             color: var(--watchdog-white);
             padding: 10px;
-            margin: 20px;
+            margin: 40px;
         }
         
         nav label {
             background-color: var(--news-flash);
             color: var(--watchdog-white);
             padding: 10px;
-            margin: 20px;
+            margin: 50px;
         }
         
         input:checked~ul {
@@ -324,6 +324,7 @@
             box-shadow: 2px 2px 3px var(--truth-text);
             grid-column: 1 / -1;
             height: 40px;
+            text-transform: uppercase;
         }
         
         footer {
