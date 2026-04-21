@@ -472,6 +472,9 @@
  /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
  
  @supports selector(nav:has(#menu-toggle:checked)) {
+     ul {
+         max-height: 500px;
+     }
      ul li a {
          visibility: visible;
      }
