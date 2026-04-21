@@ -204,6 +204,10 @@
         color: var(--watchdog-white);
         padding: 10px;
     }
+    
+    nav label {
+        visibility: hidden;
+    }
     /* ///ADD/// Global Layout Styles */
     
     body {
@@ -227,7 +231,7 @@
     }
     
     section {
-        30px;
+        padding: 30px;
     }
     
     .story {
