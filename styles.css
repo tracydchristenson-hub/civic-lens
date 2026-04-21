@@ -194,7 +194,13 @@
             max-height: 0;
         }
         
-        nav ul li a,
+        nav ul li a {
+            text-decoration: none;
+            background-color: var(--news-flash);
+            color: var(--watchdog-white);
+            max-height: 0;
+        }
+        
         #social ul li a {
             text-decoration: none;
             background-color: var(--news-flash);
@@ -212,6 +218,12 @@
         
         input:checked~ul {
             max-height: 500px;
+        }
+        
+        input:checked~ul li a {
+            max-height: 40px;
+            padding: 10px;
+            margin: 20px;
         }
         /* ///ADD/// Global Layout Styles */
         
