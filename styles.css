@@ -340,10 +340,10 @@
  
  @keyframes pulse {
      from {
-         scale: 75% 1;
+         scale: 90%;
      }
      to {
-         scale: 100% 1;
+         scale: 100%;
      }
  }
  
