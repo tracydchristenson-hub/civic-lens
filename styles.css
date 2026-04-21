@@ -394,7 +394,7 @@
  
  @media screen and (min-width: 620px) {
      nav {
-         height: 100px;
+         max-height: 130px;
      }
      nav ul {
          max-height: 100px;
@@ -407,6 +407,7 @@
          visibility: hidden;
          width: 0px;
          height: 0px;
+         padding: 0px;
      }
      nav ul li a {
          visibility: visible;
