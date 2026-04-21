@@ -1,439 +1,456 @@
-        /* CSS by Tracy Christenson */
-        /* Imported Fonts */
-        
-        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
-        /* ///ADD/// CSS Reset */
-        /* http://meyerweb.com/eric/tools/css/reset/ 
+ /* CSS by Tracy Christenson */
+ /* Imported Fonts */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wdth,wght@0,18..144,87..112,300..900;1,18..144,87..112,300..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+ /* ///ADD/// CSS Reset */
+ /* http://meyerweb.com/eric/tools/css/reset/ 
     v2.0 | 20110126
     License: none (public domain)
 */
-        
-        html,
-        body,
-        div,
-        span,
-        applet,
-        object,
-        iframe,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        blockquote,
-        pre,
-        a,
-        abbr,
-        acronym,
-        address,
-        big,
-        cite,
-        code,
-        del,
-        dfn,
-        em,
-        img,
-        ins,
-        kbd,
-        q,
-        s,
-        samp,
-        small,
-        strike,
-        strong,
-        sub,
-        sup,
-        tt,
-        var,
-        b,
-        u,
-        i,
-        center,
-        dl,
-        dt,
-        dd,
-        ol,
-        ul,
-        li,
-        fieldset,
-        form,
-        label,
-        legend,
-        table,
-        caption,
-        tbody,
-        tfoot,
-        thead,
-        tr,
-        th,
-        td,
-        article,
-        aside,
-        canvas,
-        details,
-        embed,
-        figure,
-        figcaption,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        output,
-        ruby,
-        section,
-        summary,
-        time,
-        mark,
-        audio,
-        video {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            font-size: 100%;
-            font: inherit;
-            vertical-align: baseline;
-        }
-        /* HTML5 display-role reset for older browsers */
-        
-        article,
-        aside,
-        details,
-        figcaption,
-        figure,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        section {
-            display: block;
-        }
-        
-        body {
-            line-height: 1;
-        }
-        
-        ol,
-        ul {
-            list-style: none;
-        }
-        
-        blockquote,
-        q {
-            quotes: none;
-        }
-        
-        blockquote:before,
-        blockquote:after,
-        q:before,
-        q:after {
-            content: '';
-            content: none;
-        }
-        
-        table {
-            border-collapse: collapse;
-            border-spacing: 0;
-        }
-        /* Root Variables */
-        
-         :root {
-            --blue-bulletin: #1D3557;
-            --news-flash: #E63946;
-            --watchdog-white: #F1FAEE;
-            --truth-text: #333;
-            --story-subtitle: #457B9D;
-            --font-body: "Source Sans 3", sans-serif;
-            --font-heading: 'Merriweather', serif;
-            --shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-            --transition: all 0.5s ease;
-        }
-        /* Manual Light/Dark Mode Styles*/
-        
-        body.light-mode {
-            background-color: var(--watchdog-white);
-            color: var(--truth-text);
-        }
-        
-        body.dark-mode {
-            background-color: var(--truth-text);
-            color: var(--watchdog-white);
-        }
-        
-        #theme-toggle {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            background-color: var(--watchdog-white);
-            border: 1px solid var(--blue-bulletin);
-            border-radius: 1.5rem;
-            cursor: pointer;
-        }
-        /* ///ADD/// Skip Link Styles */
-        
-        #skiplink {
-            position: absolute;
-            left: -1000px;
-            width: 0px;
-            height: 0px;
-        }
-        
-        #skiplink:focus {
-            position: static;
-            width: auto;
-            height: auto;
-        }
-        /* ///ADD/// Navigation Styles */
-        
-        nav ul {
-            list-style: none;
-            background-color: var(--blue-bulletin);
-            max-height: 0;
-        }
-        
-        nav ul li {
-            display: block;
-            margin: 20px 10px;
-        }
-        
-        nav ul li a {
-            display: block;
-            text-decoration: none;
-            background-color: var(--news-flash);
-            color: var(--watchdog-white);
-            padding: 10px;
-            visibility: hidden;
-        }
-        
-        #social ul li a {
-            display: block;
-            text-decoration: none;
-            background-color: var(--news-flash);
-            color: var(--watchdog-white);
-            padding: 10px;
-            margin: 10px;
-        }
-        
-        nav label {
-            display: block;
-            background-color: var(--news-flash);
-            color: var(--watchdog-white);
-            width: 50%;
-            text-align: center;
-            padding: 10px;
-            margin: 30px;
-        }
-        
-        input:checked~ul {
-            max-height: 500px;
-        }
-        
-        input:checked~ul li a {
-            visibility: visible;
-        }
-        /* ///ADD/// Global Layout Styles */
-        
-        body {
-            background-color: var(--watchdog-white);
-            color: var(--truth-text);
-            font-family: Arial, Verdana, sans-serif;
-            line-height: 1.25;
-            font-size: 16px;
-        }
-        
-        header {
-            background-color: var(--blue-bulletin);
-            color: var(--watchdog-white);
-            padding-top: 50px;
-            padding-bottom: 30px;
-        }
-        
-        header div {
-            width: 80%;
-            margin: 0 auto;
-        }
-        
-        main {
-            width: 80%;
-            margin: 0 auto;
-        }
-        
-        section {
-            padding: 20px;
-        }
-        
-        .story {
-            background-color: var(--news-flash);
-            color: var(--watchdog-white);
-            padding: 20px;
-            margin: 20px;
-            border: 1px solid var(--truth-text);
-            box-shadow: 2px 2px 3px var(--truth-text);
-        }
-        
-        .story hr {
-            width: 90%;
-            margin: 10px auto;
-        }
-        
-        video {
-            width: 90%;
-            margin: 10px auto;
-        }
-        
-        #featured section {
-            padding: 20px;
-            margin: 20px;
-            border: 1px solid var(--truth-text);
-            box-shadow: 2px 2px 3px var(--truth-text);
-        }
-        
-        #featured section hr {
-            width: 90%;
-            margin: 10px auto;
-        }
-        
-        form {
-            background-color: var(--news-flash);
-            color: var(--watchdog-white);
-            border: 1px solid var(--blue-bulletin);
-            padding: 20px;
-            margin: 10px;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            box-shadow: 2px 2px 3px var(--truth-text);
-        }
-        
-        form div {
-            margin: 10px;
-        }
-        
-        fieldset {
-            border: 1px solid var(--blue-bulletin);
-            padding: 10px;
-            margin-top: 20px;
-            margin-bottom: 20px;
-            grid-column: 1 / -1;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-        }
-        
-        input[type="text"],
-        input[type="tel"] {
-            width: 100%;
-            height: 30px;
-        }
-        
-        input[type="submit"] {
-            background-color: var(--blue-bulletin);
-            color: var(--watchdog-white);
-            box-shadow: 2px 2px 3px var(--truth-text);
-            grid-column: 1 / -1;
-            height: 40px;
-            text-transform: uppercase;
-        }
-        
-        footer {
-            background-color: var(--blue-bulletin);
-            color: var(--watchdog-white);
-        }
-        
-        #social {
-            width: 80%;
-            margin: 0 auto;
-        }
-        
-        #social ul {
-            margin: 20px;
-        }
-        
-        #social ul li {
-            display: inline-block;
-        }
-        /* ///ADD/// Global Text Styles */
-        
-        h1,
-        h2,
-        h3 {
-            font-family: Garamond, 'Times New Roman', serif;
-        }
-        
-        h1 {
-            font-size: 3em;
-        }
-        
-        h2 {
-            font-size: 2em;
-        }
-        
-        h3 {
-            font-size: 1.5em;
-        }
-        
-        header .tagline {
-            font-size: 1.2em;
-            font-weight: bold;
-        }
-        
-        #welcome .tagline {
-            font-size: 1em;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 20px;
-        }
-        
-        footer p {
-            text-align: center;
-        }
-        /* ///ADD/// medium styles 620px */
-        
-        @media screen and (min-width: 620px) {
-            nav ul {
-                max-height: 100px;
-            }
-            nav ul li,
-            #social ul li {
-                display: inline-block;
-            }
-            nav label {
-                visibility: hidden;
-                width: 0px;
-                height: 0px;
-            }
-            nav ul li a {
-                visibility: visible;
-            }
-            #featured {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-            #featured h2 {
-                grid-column: 1 / -1;
-            }
-        }
-        /* ///ADD/// large styles 920px */
-        
-        @media screen and (min-width: 920px) {
-            #featured {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-            }
-        }
-        /* ///ADD/// x-large styles 1024px */
-        
-        @media screen and (min-width: 1024px) {
-            #breaking {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-            }
-            #breaking h2 {
-                grid-column: 1 / -1;
-            }
-        }
-        /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
-        /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
-        
-        @supports (selector(:has(*))) {}
+ 
+ html,
+ body,
+ div,
+ span,
+ applet,
+ object,
+ iframe,
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ blockquote,
+ pre,
+ a,
+ abbr,
+ acronym,
+ address,
+ big,
+ cite,
+ code,
+ del,
+ dfn,
+ em,
+ img,
+ ins,
+ kbd,
+ q,
+ s,
+ samp,
+ small,
+ strike,
+ strong,
+ sub,
+ sup,
+ tt,
+ var,
+ b,
+ u,
+ i,
+ center,
+ dl,
+ dt,
+ dd,
+ ol,
+ ul,
+ li,
+ fieldset,
+ form,
+ label,
+ legend,
+ table,
+ caption,
+ tbody,
+ tfoot,
+ thead,
+ tr,
+ th,
+ td,
+ article,
+ aside,
+ canvas,
+ details,
+ embed,
+ figure,
+ figcaption,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ output,
+ ruby,
+ section,
+ summary,
+ time,
+ mark,
+ audio,
+ video {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     font-size: 100%;
+     font: inherit;
+     vertical-align: baseline;
+ }
+ /* HTML5 display-role reset for older browsers */
+ 
+ article,
+ aside,
+ details,
+ figcaption,
+ figure,
+ footer,
+ header,
+ hgroup,
+ menu,
+ nav,
+ section {
+     display: block;
+ }
+ 
+ body {
+     line-height: 1;
+ }
+ 
+ ol,
+ ul {
+     list-style: none;
+ }
+ 
+ blockquote,
+ q {
+     quotes: none;
+ }
+ 
+ blockquote:before,
+ blockquote:after,
+ q:before,
+ q:after {
+     content: '';
+     content: none;
+ }
+ 
+ table {
+     border-collapse: collapse;
+     border-spacing: 0;
+ }
+ /* Root Variables */
+ 
+ :root {
+     --blue-bulletin: #1D3557;
+     --news-flash: #E63946;
+     --watchdog-white: #F1FAEE;
+     --truth-text: #333;
+     --story-subtitle: #457B9D;
+     --font-body: "Source Sans 3", sans-serif;
+     --font-heading: 'Merriweather', serif;
+     --shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+     --transition: all 0.5s ease;
+ }
+ /* Manual Light/Dark Mode Styles*/
+ 
+ body.light-mode {
+     background-color: var(--watchdog-white);
+     color: var(--truth-text);
+ }
+ 
+ body.dark-mode {
+     background-color: var(--truth-text);
+     color: var(--watchdog-white);
+ }
+ 
+ #theme-toggle {
+     position: absolute;
+     top: 1rem;
+     right: 1rem;
+     background-color: var(--watchdog-white);
+     border: 1px solid var(--blue-bulletin);
+     border-radius: 1.5rem;
+     cursor: pointer;
+ }
+ /* ///ADD/// Skip Link Styles */
+ 
+ #skiplink {
+     position: absolute;
+     left: -1000px;
+     width: 0px;
+     height: 0px;
+ }
+ 
+ #skiplink:focus {
+     position: static;
+     width: auto;
+     height: auto;
+ }
+ /* ///ADD/// Navigation Styles */
+ 
+ nav ul {
+     list-style: none;
+     background-color: var(--blue-bulletin);
+     max-height: 0;
+ }
+ 
+ nav ul li {
+     display: block;
+     margin: 20px 10px;
+ }
+ 
+ nav ul li a {
+     display: block;
+     text-decoration: none;
+     background-color: var(--news-flash);
+     color: var(--watchdog-white);
+     padding: 10px;
+     visibility: hidden;
+ }
+ 
+ #social ul li a {
+     display: block;
+     text-decoration: none;
+     background-color: var(--news-flash);
+     color: var(--watchdog-white);
+     padding: 10px;
+     margin: 10px;
+ }
+ 
+ nav label {
+     display: block;
+     background-color: var(--news-flash);
+     color: var(--watchdog-white);
+     width: 50%;
+     text-align: center;
+     padding: 10px;
+     margin: 30px;
+ }
+ 
+ input:checked~ul {
+     max-height: 500px;
+ }
+ 
+ input:checked~ul li a {
+     visibility: visible;
+ }
+ /* ///ADD/// Global Layout Styles */
+ 
+ body {
+     background-color: var(--watchdog-white);
+     color: var(--truth-text);
+     font-family: Arial, Verdana, sans-serif;
+     line-height: 1.25;
+     font-size: 16px;
+ }
+ 
+ header {
+     background-color: var(--blue-bulletin);
+     color: var(--watchdog-white);
+     padding-top: 50px;
+     padding-bottom: 30px;
+ }
+ 
+ header div {
+     width: 80%;
+     margin: 0 auto;
+ }
+ 
+ main {
+     width: 80%;
+     margin: 0 auto;
+ }
+ 
+ section {
+     padding: 20px;
+ }
+ 
+ .story {
+     background-color: var(--news-flash);
+     color: var(--watchdog-white);
+     padding: 20px;
+     margin: 20px;
+     border: 1px solid var(--truth-text);
+     box-shadow: 2px 2px 3px var(--truth-text);
+ }
+ 
+ .story hr {
+     width: 90%;
+     margin: 10px auto;
+ }
+ 
+ video {
+     width: 90%;
+     margin: 10px auto;
+ }
+ 
+ #featured section {
+     padding: 20px;
+     margin: 20px;
+     border: 1px solid var(--truth-text);
+     box-shadow: 2px 2px 3px var(--truth-text);
+ }
+ 
+ #featured section hr {
+     width: 90%;
+     margin: 10px auto;
+ }
+ 
+ form {
+     background-color: var(--news-flash);
+     color: var(--watchdog-white);
+     border: 1px solid var(--blue-bulletin);
+     padding: 20px;
+     margin: 10px;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     box-shadow: 2px 2px 3px var(--truth-text);
+ }
+ 
+ form div {
+     margin: 10px;
+ }
+ 
+ fieldset {
+     border: 1px solid var(--blue-bulletin);
+     padding: 10px;
+     margin-top: 20px;
+     margin-bottom: 20px;
+     grid-column: 1 / -1;
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+ }
+ 
+ input[type="text"],
+ input[type="tel"] {
+     width: 100%;
+     height: 30px;
+ }
+ 
+ input[type="submit"] {
+     background-color: var(--blue-bulletin);
+     color: var(--watchdog-white);
+     box-shadow: 2px 2px 3px var(--truth-text);
+     grid-column: 1 / -1;
+     height: 40px;
+     text-transform: uppercase;
+ }
+ 
+ footer {
+     background-color: var(--blue-bulletin);
+     color: var(--watchdog-white);
+ }
+ 
+ #social {
+     width: 80%;
+     margin: 0 auto;
+ }
+ 
+ #social ul {
+     margin: 20px;
+ }
+ 
+ #social ul li {
+     display: inline-block;
+ }
+ /* ///ADD/// Global Text Styles */
+ 
+ h1,
+ h2,
+ h3 {
+     font-family: Garamond, 'Times New Roman', serif;
+ }
+ 
+ h1 {
+     font-size: 3em;
+ }
+ 
+ h2 {
+     font-size: 2em;
+ }
+ 
+ h3 {
+     font-size: 1.5em;
+ }
+ 
+ header .tagline {
+     font-size: 1.2em;
+     font-weight: bold;
+ }
+ 
+ #welcome .tagline {
+     font-size: 1em;
+     font-weight: bold;
+     text-align: center;
+     margin-top: 20px;
+ }
+ 
+ footer p {
+     text-align: center;
+ }
+ /* ///ADD/// medium styles 620px */
+ 
+ @media screen and (min-width: 620px) {
+     nav {
+         max-height: 150px;
+     }
+     nav ul {
+         max-height: 100px;
+     }
+     nav ul li,
+     #social ul li {
+         display: inline-block;
+     }
+     nav label {
+         visibility: hidden;
+         width: 0px;
+         height: 0px;
+     }
+     nav ul li a {
+         visibility: visible;
+     }
+     #featured {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+     }
+     #featured h2 {
+         grid-column: 1 / -1;
+     }
+ }
+ /* ///ADD/// large styles 920px */
+ 
+ @media screen and (min-width: 920px) {
+     #featured {
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+     }
+ }
+ /* ///ADD/// x-large styles 1024px */
+ 
+ @media screen and (min-width: 1024px) {
+     #breaking {
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+     }
+     #breaking h2 {
+         grid-column: 1 / -1;
+     }
+ }
+ /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
+ 
+ @media (prefers-color-scheme: dark) {
+     body.dark-mode {
+         background-color: var(--truth-text);
+         color: var(--watchdog-white);
+     }
+ }
+ 
+ @media (prefers-color-scheme: light) {
+     body.light-mode {
+         background-color: var(--watchdog-white);
+         color: var(--truth-text);
+     }
+ }
+ /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
+ 
+ @supports (selector(:has(*))) {}
