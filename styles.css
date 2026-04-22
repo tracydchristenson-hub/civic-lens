@@ -358,6 +358,12 @@
      text-transform: uppercase;
  }
  
+ input[type="submit"]:hover {
+     background-color: var(--watchdog-white);
+     color: var(--blue-bulletin);
+     border: 1px solid var(--blue-bulletin);
+ }
+ 
  footer {
      background-color: var(--blue-bulletin);
      color: var(--watchdog-white);
