@@ -229,7 +229,8 @@
      color: var(--watchdog-white);
      border: 1px solid var(--news-flash);
      padding: 10px;
-     margin: 5px 10px;
+     margin-top: 5px;
+     margin-bottom: 5px;
  }
  
  #social ul li a:hover,
@@ -439,6 +440,7 @@
      }
      nav ul {
          max-height: 100px;
+         width: auto;
      }
      nav ul li,
      #social ul li {
@@ -452,6 +454,7 @@
      }
      nav ul li a {
          visibility: visible;
+         width: auto;
      }
      #breaking {
          display: grid;
