@@ -502,7 +502,16 @@
  }
  /* ///ADD/// x-large styles 1024px */
  
- @media screen and (min-width: 1024px) {}
+ @media screen and (min-width: 1024px) {
+     h1 {
+         font-size: 3em;
+     }
+     nav ul li a,
+     #social ul li a {
+         margin-right: 10px;
+         margin-left: 10px;
+     }
+ }
  /* ///ADD/// Interaction Queries for color scheme light and dark and motion preference */
  
  @media (prefers-color-scheme: dark) {
