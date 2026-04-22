@@ -215,13 +215,20 @@
      color: var(--watchdog-white);
      padding: 10px;
      margin: 10px;
+     width: 100%;
+ }
+ 
+ #social ul li a:hover,
+ nav ul li a:hover {
+     background-color: var(--blue-bulletin);
+     border: 1px solid var(--news-flash);
  }
  
  nav label {
      display: block;
      background-color: var(--news-flash);
      color: var(--watchdog-white);
-     width: 50%;
+     width: 100%;
      text-align: center;
      padding: 10px;
      margin: 30px;
@@ -272,6 +279,7 @@
      margin: 20px;
      border: 1px solid var(--truth-text);
      box-shadow: 2px 2px 3px var(--truth-text);
+     scale: 100%;
  }
  
  .story hr {
@@ -289,6 +297,19 @@
      margin: 20px;
      border: 1px solid var(--truth-text);
      box-shadow: 2px 2px 3px var(--truth-text);
+     scale: 100%;
+ }
+ 
+ .story:hover {
+     scale: 110%;
+     transition-property: scale;
+     transition-duration: 1s;
+ }
+ 
+ #featured section:hover {
+     scale: 110%;
+     transition-property: scale;
+     transition-duration: 1s;
  }
  
  #featured section hr {
@@ -335,16 +356,6 @@
      grid-column: 1 / -1;
      height: 40px;
      text-transform: uppercase;
-     animation: pulse 1s linear infinite;
- }
- 
- @keyframes pulse {
-     from {
-         scale: 90%;
-     }
-     to {
-         scale: 100%;
-     }
  }
  
  footer {
@@ -476,8 +487,15 @@
  }
  
  @media (prefers-reduced-motion: reduce) {
-     input[type="submit"] {
-         animation: pulse 4s linear infinite both;
+     .story:hover {
+         scale: 110%;
+         transition-property: scale;
+         transition-duration: 2s;
+     }
+     #featured section:hover {
+         scale: 110%;
+         transition-property: scale;
+         transition-duration: 2s;
      }
  }
  /* ///ADD///  Feature Query for :has() that checks if the #menu-toggle is checked */
