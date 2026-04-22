@@ -239,7 +239,7 @@
  }
  
  #social ul li a:hover,
- nav ul li a:hove,
+ nav ul li a:hover,
  nav label:hover {
      background-color: var(--blue-bulletin);
      border: 1px solid var(--news-flash);
