@@ -238,7 +238,8 @@
  }
  
  #social ul li a:hover,
- nav ul li a:hover {
+ nav ul li a:hove,
+ nav label:hover {
      background-color: var(--blue-bulletin);
      border: 1px solid var(--news-flash);
  }
@@ -247,6 +248,7 @@
      display: block;
      background-color: var(--news-flash);
      color: var(--watchdog-white);
+     border: 1px solid var(--news-flash);
      width: 100%;
      text-align: center;
      padding: 10px;
