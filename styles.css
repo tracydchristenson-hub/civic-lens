@@ -213,7 +213,6 @@
      width: 100%;
      margin-top: 5px;
      margin-bottom: 5px;
-     text-align: center;
  }
  
  nav ul li a {
@@ -225,6 +224,7 @@
      padding: 10px;
      visibility: hidden;
      width: 100%;
+     text-align: center;
  }
  
  #social ul li a {
@@ -404,7 +404,6 @@
  
  #social ul li {
      display: inline-block;
-     text-align: center;
  }
  /* ///ADD/// Global Text Styles */
  
